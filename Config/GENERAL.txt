@@ -1,7 +1,8 @@
 #科学插件调整
 CONFIG_PACKAGE_luci-app-homeproxy=y
 CONFIG_PACKAGE_luci-app-nikki=y
-
+CONFIG_PACKAGE_luci-app-daed=y
+CONFIG_PACKAGE_luci-app-dae=y
 #增加插件
 CONFIG_PACKAGE_luci-app-samba4=n
 CONFIG_PACKAGE_luci-app-wolplus=y
@@ -22,13 +23,10 @@ CONFIG_PACKAGE_luci-app-lucky=y
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-gecoosac=y
 CONFIG_PACKAGE_luci-app-pushbot=y
-
 #删除插件
 CONFIG_PACKAGE_luci-app-ddns-go=n
 CONFIG_PACKAGE_luci-theme-kucat=n
 CONFIG_PACKAGE_luci-app-tailscale=n
-CONFIG_PACKAGE_luci-app-daed=n
-CONFIG_PACKAGE_luci-app-dae=n
 CONFIG_PACKAGE_luci-app-wol=n
 CONFIG_PACKAGE_luci-app-ddns=n
 CONFIG_PACKAGE_luci-app-xlnetacc=n
@@ -41,10 +39,14 @@ CONFIG_PACKAGE_luci-app-fileassistant=n
 CONFIG_PACKAGE_luci-app-argon-config=n
 CONFIG_PACKAGE_v2ray-plugin=n
 #参数调整
+CONFIG_USE_APK=n
 CONFIG_DEVEL=y
 CONFIG_CCACHE=y
 CONFIG_TARGET_MULTI_PROFILE=y
 CONFIG_TARGET_PER_DEVICE_ROOTFS=y
+# Libraries
+CONFIG_PACKAGE_luci-lib-ipkg=y
+CONFIG_PACKAGE_libopenssl-legacy=y
 #内核调整
 CONFIG_PACKAGE_kmod-dsa=y
 CONFIG_PACKAGE_kmod-fuse=y
