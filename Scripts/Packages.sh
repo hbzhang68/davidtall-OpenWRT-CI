@@ -48,6 +48,7 @@ UPDATE_PACKAGE() {
 }
 
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
+git clone --depth=1 https://github.com/sirpdboy/sirpdboy-package package/luci-app-poweroffdevice
 git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
 git clone --depth=1 https://github.com/ilxp/luci-app-ikoolproxy package/luci-app-ikoolproxy
 git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
