@@ -47,7 +47,7 @@ UPDATE_PACKAGE() {
 	fi
 }
 
-#git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
+git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git clone --depth=1 https://github.com/sirpdboy/sirpdboy-package package/luci-app-poweroffdevice
 git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
 git clone --depth=1 https://github.com/ilxp/luci-app-ikoolproxy package/luci-app-ikoolproxy
@@ -61,7 +61,7 @@ git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-a
 
 # UPDATE_PACKAGE "包名" "项目地址" "项目分支" "pkg/name，可选，pkg为从大杂烩中单独提取包名插件；name为重命名为包名"
 UPDATE_PACKAGE "argon" "sbwml/luci-theme-argon" "openwrt-24.10"
-#UPDATE_PACKAGE "luci-app-poweroff" "esirplayground/luci-app-poweroff" "main"
+UPDATE_PACKAGE "luci-app-poweroff" "esirplayground/luci-app-poweroff" "main"
 #UPDATE_PACKAGE "poweroff" "esirplayground/luci-app-poweroff" "main"
 #UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
 #UPDATE_PACKAGE "nikki" "nikkinikki-org/OpenWrt-nikki" "main"
@@ -80,7 +80,6 @@ UPDATE_PACKAGE "luci-app-gecoosac" "lwb1978/openwrt-gecoosac" "main"
 
 UPDATE_PACKAGE "luci-app-daed" "QiuSimons/luci-app-daed" "master"
 UPDATE_PACKAGE "luci-app-ddns-go" "sirpdboy/luci-app-ddns-go" "main"
-UPDATE_PACKAGE "luci-app-poweroffdevice" "sirpdboy/sirpdboy-package/tree/main/luci-app-poweroffdevice" "main"
 UPDATE_PACKAGE "luci-app-pushbot" "zzsj0928/luci-app-pushbot" "master"
 
 if [[ $WRT_REPO != *"immortalwrt"* ]]; then
